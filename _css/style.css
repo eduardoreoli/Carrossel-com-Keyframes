@@ -2,10 +2,13 @@
     width: 350px;
     height: 500px;
     margin: 0 auto;
+    margin-top: 70px;
+    /*aqui se insere a chamada para a animação. Primeiro o nome da keyframe, depois o tempo entre cada troca e por fim quantas vezes ela deve ser chamada*/
     animation: carrossel 8s infinite;
     animation-direction: alternate;
 }
 
+/*pode-se dividir os itens dentro dos keyframes entre 0 a 100, sempre tendo o cuidado de deixar algum valor (no caso 5) entre cada keyframe pois será o tempo de mudança entre uma imagem e outra.*/
 @keyframes carrossel {
     0%, 30% {
         background-image: url(/imgs/1.jpg);
